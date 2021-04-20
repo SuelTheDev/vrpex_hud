@@ -1,6 +1,7 @@
-html, body {
+html, body, #app {
     margin: 0;
     padding: 0;
+    background: transparent;
 }
 
 #app {
@@ -9,8 +10,7 @@ html, body {
     left: 0;
     top: 0;
     height: 100vh;
-    width: 100vw;
-   
+    width: 100vw;   
 }
 
 div.hud {
@@ -20,7 +20,7 @@ div.hud {
     right: 8px;
     width: auto;
     height: auto;
-    zoom: 0.8;
+    zoom: 1.1;
 }
 
 div.logo {
@@ -32,7 +32,6 @@ div.logo {
 div.logo img {
     width: 128px;
 }
-
 
 .hud .discord-info {
     color: white;
@@ -144,7 +143,6 @@ div.logo img {
     }
 }
 
-
 .velocimetro {
     width: 200px;
     height: 200px;
@@ -153,4 +151,12 @@ div.logo img {
     bottom: 16px;
     left: 50%;
     transform: translate(-50%);
+}
+
+#speedometer {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    zoom: 1.3;
 }

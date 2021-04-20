@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
     <title>HUD</title>
 </head>
 <body>
@@ -53,11 +54,14 @@
                <i class="fab fa-discord me-2"></i>
                <span>https://discord.gg/xyz</span>
            </div>
-        </div>
-        <div class="velocimetro">
-            
-        </div>
+        </div>      
+        <div id="speedometer">
+            <div style="display: none;"><img id="sprite" src="assets/icons.svg"></div>
+            <canvas id="canvas" width="425" height="210"></canvas>
+        </div>    
     </div>
+    <script src="assets/fraction.min.js"></script>
+    <script src="assets/speedometer.js"></script>
     <script src="assets/ui.js"></script>
 </body>
 </html>

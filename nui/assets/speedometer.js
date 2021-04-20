@@ -854,7 +854,7 @@ function draw(speedometerValue, tachometerValue, gasValue, mileage, turnSignals,
 
     mCircle.drawTextMarks(
         angles=textMarksAngles,
-        step=20,
+        step=35,
         offset=22.5
     );
 

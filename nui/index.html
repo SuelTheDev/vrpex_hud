@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>HUD</title>
+</head>
+<body>
+    <div id="app">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/DC_Comics_logo.png/600px-DC_Comics_logo.png" alt="" srcset="">
+        </div>
+        <div class="hud d-flex flex-column">
+            <div class="status-call d-flex flex-row justify-content-end m-2">
+                <div class="clock-container d-flex justify-content-center align-items-center me-2">
+                    <i class="far fa-clock me-2"></i>
+                    <span>00:00</span>
+                </div>
+                <div class="clock-container d-flex justify-content-center align-items-center">
+                    <i class="fas fa-microphone me-3 mic-gritando"></i>
+                    <svg id="walkie" class="radio-talking" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m226 0c-8.291 0-15 6.709-15 15v106h-15c-24.814 0-45 20.186-45 45v301c0 24.814 20.186 45 45 45h150c24.814 0 45-20.186 45-45v-117.455l28.418-56.836c1.04-2.08 1.582-4.38 1.582-6.709v-120c0-24.814-20.186-45-45-45h-135v-106c0-8.291-6.709-15-15-15zm0 451c-8.284 0-15-6.716-15-15s6.716-15 15-15 15 6.716 15 15-6.716 15-15 15zm0-60c-8.284 0-15-6.716-15-15s6.716-15 15-15 15 6.716 15 15-6.716 15-15 15zm120-120h-120c-8.291 0-15-6.709-15-15s6.709-15 15-15h120c8.291 0 15 6.709 15 15s-6.709 15-15 15zm0-90c8.291 0 15 6.709 15 15s-6.709 15-15 15h-120c-8.291 0-15-6.709-15-15s6.709-15 15-15z"/><path d="m121 361v-120h-15c-8.291 0-15 6.709-15 15v90c0 8.291 6.709 15 15 15z"/></g></svg>
+                </div>
+            </div>
+           <div class="status d-flex flex-row flex-nowrap">
+               <div class="item me-2 status-vida">    
+                   <div class="item-display display-vida"></div>                               
+                   <i class="fas fa-heartbeat"></i>
+               </div>
+               <div class="item me-2 status-colete">
+                    <div class="item-display display-colete"></div> 
+                    <i class="fas fa-vest-patches"></i>
+               </div>
+               <div class="item me-2 status-estamina">
+                    <div class="item-display display-estamina"></div> 
+                    <i class="fas fa-running"></i>
+               </div>
+               <div class="item me-2 status-fome">
+                    <div class="item-display display-fome"></div> 
+                    <i class="fas fa-utensils"></i>
+               </div>
+               <div class="item me-2 status-sede">
+                    <div class="item-display display-sede"></div> 
+                    <i class="fas fa-mug-hot"></i>
+               </div>
+           </div>
+           <div class="discord-info p-1 d-flex justify-content-start flex-fill mt-2">
+               <i class="fab fa-discord me-2"></i>
+               <span>https://discord.gg/xyz</span>
+           </div>
+        </div>
+        <div class="velocimetro">
+            
+        </div>
+    </div>
+    <script src="assets/ui.js"></script>
+</body>
+</html>
